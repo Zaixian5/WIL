@@ -1,0 +1,38 @@
+2023. 04. 05. (수) 10:14:23 KST
+Linux student-VirtualBox 5.19.0-35-generic #36~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb 17 15:17:25 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+student  tty2         2023-04-05 10:07 (tty2)
+ 117  518 3771 .bashrc
+    1  echo "00000000 SAJAEHEON" > history.txt
+    2  date >> history.txt
+    3  uname -a >> history.txt
+    4  who >> history.txt
+    5  wc .bashrc >> history.txt
+    6  mkdir 2023
+    7  cd 2023/mid
+    8  ls -l ~/.bashrc
+    9  cp /home/student/.bashrc /home/student/2023/mid
+   10  head -3 .bashrc >> head.txt
+   11  mv .bashrc .myBashrc
+   12  ln -s .myBashrc bashrc
+   13  touch .myBashrc
+   14  ls -l .myBashrc
+   15  chmod 764 .myBashrc
+   16  chmod o+w .myBashrc
+   17  cp /etc/group /home/student/2023
+   18  mv /home/student/2023/group /home/student/2023/mid
+   19  (cat head.txt >> group) >> head_group.txt
+   20  (sleep 500 ; echo First)&
+   21  (sleep 550 ; echo Second)&
+   22  (sleep 600 ; echo Third)&
+   23  fg %2
+   24  bg
+   25  ps aux | grep "sleep"
+   26  top
+   27  kill -9 %2
+   28  kill -9 4506
+   29  cd ..
+   30  chmod -R u=rwx,g=rw,o-rwx mid 
+   31  cp -r /home/student/2023 ~/2023backup
+   32  rm -r /home/student/2023
+   33  cd ~
+   34  history >> history.txt

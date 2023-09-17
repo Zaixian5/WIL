@@ -1,0 +1,10 @@
+figure_1: main.o circle.o rectangle.o triangle.o
+	gcc -o figure_1 main.o circle.o rectangle.o triangle.o
+main.o: main.c
+	gcc -c main.c
+circle.o: circle.c
+	gcc -c circle.c
+rectangle.o: rectangle.c
+	gcc -c rectangle.c
+triangle.o: triangle.c
+	gcc -c triangle.c
