@@ -15,8 +15,8 @@ int which_to_replace(NRU_PAGE* nru_pages, Node* page_table, int* page_set) {
     Node* current = page_table;
 
     // 클래스 분류
-    // 클래스는 0 ~ 4번까지 있다.
-    // 0 ~ 4까지의 클래스는 (r비트, m비트)가 각각 (0, 0), (0, 1), (1, 0), (1, 1)이다.
+    // 클래스는 0 ~ 3번까지 있다.
+    // 0 ~ 3까지의 클래스는 (r비트, m비트)가 각각 (0, 0), (0, 1), (1, 0), (1, 1)이다.
     // 페이지 교체의 우선순위는 '클래스 0 > 클래스 1 > 클래스 2 > 클래스 3'이다.
     int class_0 = -1, class_1 = -1, class_2 = -1, class_3 = -1;
 
